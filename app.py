@@ -9,8 +9,11 @@ i = 0
 @app.route("/")
 def home():
     global i
+    r = randint(0, 255)
+    g = randint(0, 255)
+    b = randint(0, 255)
     i += 1
-    color = tuple((i, i, i))
+    color = tuple((r, g, b))
 
     return render_template("index.html", i=i, color=color)
 

@@ -15,7 +15,7 @@ def home():
     all_clicks += 1
     color = tuple((r, g, b))
 
-    return render_template("index.html", i=all_clicks, color=color)
+    return render_template("index.html", all_clicks=all_clicks, color=color)
 
 
 if __name__ == "__main__":
